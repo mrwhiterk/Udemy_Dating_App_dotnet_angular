@@ -27,3 +27,4 @@ history from creating db migration using dotnet ef
   893  dotnet tool install --global dotnet-ef --version 5.0.0
   894  dotnet watch run
   895  dotnet ef migrations add InitialCreate -o Data/Migrations
+  ng add ngx-bootstrap
