@@ -1,0 +1,29 @@
+history from creating db migration using dotnet ef
+ 868  dotnet new webapi -o API
+  869  ls
+  870  dotnet sln add API
+  871  ls
+  872  code -r .
+  873  cd API
+  874  dotnet run
+  875  dotnet dev-certs https --trust
+  876  dotnet run
+  877  dotnet watch run
+  878  cd ..
+  879  ls
+  880  git init
+  881  git add .
+  882  gcam "initial commit; started adding connection string for sqlite"
+  883  git branch -M main
+  884  git remote add origin git@github.com:mrwhiterk/Udemy_Dating_App_dotnet_angular.git
+  885  git push -u origin main
+  886  cd API
+  887  history
+  888  dotnet watch run
+  889  dotnet tool install --global dotnet-ef --version 5.0.0
+  890  cat << \EOF >> ~/.zprofile\n# Add .NET Core SDK tools\nexport PATH="$PATH:/Users/mrwhiterk/.dotnet/tools"\nEOF
+  891  zsh -l
+  892  export PATH="$PATH:/Users/mrwhiterk/.dotnet/tools"
+  893  dotnet tool install --global dotnet-ef --version 5.0.0
+  894  dotnet watch run
+  895  dotnet ef migrations add InitialCreate -o Data/Migrations
