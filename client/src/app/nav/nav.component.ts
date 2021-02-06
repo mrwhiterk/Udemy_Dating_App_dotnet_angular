@@ -24,4 +24,8 @@ export class NavComponent implements OnInit {
     }, err => console.log('err', err))
   }
 
+  logout() {
+    this.loggedIn = false;
+  }
+
 }
